@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sina Saadat</title>
+
+<!-- ________________________ Scripts ________________________ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" 
+        integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" crossorigin="anonymous" referrerpolicy="no-referrer" defer>
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" 
+        integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw==" crossorigin="anonymous" referrerpolicy="no-referrer" defer>
+    </script>
+
+    <script src="./app.js" defer></script>
+<!-- _________________________________________________________ -->
+</head>
+
+<body>
+    
+    <header>
+        <nav>
+            <section id="opening" class="show">
+                <svg id="logo" width="507" height="108" viewBox="0 0 507 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_i_2_3)">
+                    <path d="M59.3 2.70001H1.25V105H60.65V91.8H15.95V60H57.8V46.95H15.95V15.75H59.3V2.70001Z" fill="#FFD646"/>
+                    <path d="M128.073 8.55001C121.023 3.90001 112.923 1.35001 104.523 1.35001C86.0727 1.35001 74.3727 13.05 74.3727 28.5C74.3727 34.95 76.3227 39.75 79.4727 43.8C83.9727 49.5 88.6227 52.35 104.823 62.1C109.623 64.95 118.323 71.25 118.323 79.8C118.323 88.5 110.073 93.3 102.423 93.3C86.9727 93.3 77.8227 82.05 74.8227 78.3V96.9C82.7727 102.9 92.3727 106.35 102.423 106.35C120.573 106.35 132.123 94.5 132.123 78.45C132.123 71.1 129.723 65.55 126.573 61.5C122.673 56.25 117.723 52.65 113.373 50.1C93.8727 38.7 87.8727 35.1 87.8727 26.4C87.8727 19.95 94.0227 14.55 104.073 14.55C110.973 14.55 119.373 16.8 128.073 25.2V8.55001Z" fill="#FFD646"/>
+                    <path d="M235.324 9.75001C228.724 6.90001 215.224 1.35001 199.474 1.35001C167.074 1.35001 144.124 25.8 144.124 54C144.124 77.85 161.224 106.35 199.174 106.35C212.224 106.35 224.524 103.8 236.374 97.35V81.3C225.574 88.35 212.974 92.7 200.074 92.7C172.924 92.7 159.424 73.2 159.424 54.15C159.424 33.6 175.174 15.3 199.924 15.3C212.374 15.3 224.524 19.35 235.324 25.5V9.75001Z" fill="#FFD646"/>
+                    <path d="M349.475 2.70001H335.825L301.925 44.7L267.875 2.70001H254.075V105H268.775V25.35L300.575 64.95H303.275L334.775 25.35V105H349.475V2.70001Z" fill="#FFD646"/>
+                    <path d="M388.362 106.35C411.612 91.95 429.462 64.05 429.462 38.7C429.462 17.85 416.713 1.35001 396.312 1.35001C377.712 1.35001 365.712 16.65 365.712 31.8C365.712 46.8 377.262 61.5 394.212 61.5C400.062 61.5 405.613 60.15 410.562 57.15C405.313 77.4 386.262 91.2 379.362 95.55L388.362 106.35ZM413.413 42.6C405.313 48 398.862 48.15 397.362 48.15C390.162 48.15 380.263 42.45 380.263 31.8C380.263 25.65 384.162 15 396.612 15C409.812 15 414.163 26.7 414.163 34.65C414.163 37.5 413.713 40.2 413.413 42.6Z" fill="#FFD646"/>
+                    <path d="M494.562 1.35001H488.562L436.962 64.95V71.4H480.312V105H494.562V71.4H505.962V58.8H494.562V1.35001ZM480.312 58.8H456.612L480.312 29.1V58.8Z" fill="#FFD646"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M60.3 1.70001V16.75H16.95V45.95H58.8V61H16.95V90.8H61.65V106H0.25V1.70001H60.3ZM60.65 91.8V105H1.25V2.70001H59.3V15.75H15.95V46.95H57.8V60H15.95V91.8H60.65ZM129.073 8.01166V27.5556L127.378 25.9194C118.87 17.7044 110.721 15.55 104.073 15.55C94.3186 15.55 88.8727 20.7277 88.8727 26.4C88.8727 28.4522 89.2247 30.1497 90.0098 31.7241C90.7996 33.308 92.0588 34.8297 93.9651 36.4818C97.8147 39.8181 104.088 43.5136 113.877 49.2367L113.878 49.2373C118.29 51.8233 123.36 55.5021 127.369 60.8948C130.644 65.1092 133.123 70.8702 133.123 78.45C133.123 86.7222 130.142 93.9653 124.773 99.1388C119.405 104.311 111.719 107.35 102.423 107.35C92.1407 107.35 82.3318 103.82 74.2202 97.6982L73.8227 97.3981V75.4492L75.6035 77.6753C78.6006 81.4216 87.4844 92.3 102.423 92.3C106.055 92.3 109.811 91.1569 112.637 89.0155C115.442 86.8902 117.323 83.7951 117.323 79.8C117.323 75.8773 115.326 72.3969 112.639 69.4916C109.956 66.5916 106.673 64.3614 104.312 62.9599L104.307 62.9568C88.1661 53.2424 83.3262 50.295 78.6878 44.4197L78.6833 44.414C75.4027 40.1961 73.3727 35.1819 73.3727 28.5C73.3727 20.5124 76.4024 13.4541 81.8486 8.39837C87.2915 3.34564 95.0843 0.350006 104.523 0.350006C113.128 0.350006 121.418 2.96312 128.623 7.71524L129.073 8.01166ZM126.573 61.5C122.673 56.25 117.723 52.65 113.373 50.1C93.8727 38.7 87.8727 35.1 87.8727 26.4C87.8727 19.95 94.0227 14.55 104.073 14.55C110.708 14.55 118.73 16.6307 127.073 24.2601C127.406 24.5645 127.739 24.8777 128.073 25.2V8.55001C121.023 3.90001 112.923 1.35001 104.523 1.35001C86.0727 1.35001 74.3727 13.05 74.3727 28.5C74.3727 34.95 76.3227 39.75 79.4727 43.8C83.9727 49.5 88.6227 52.35 104.823 62.1C109.623 64.95 118.323 71.25 118.323 79.8C118.323 88.5 110.073 93.3 102.423 93.3C88.4136 93.3 79.5842 84.0506 75.8227 79.5298C75.4357 79.0647 75.1025 78.6498 74.8227 78.3V96.9C82.7727 102.9 92.3727 106.35 102.423 106.35C120.573 106.35 132.123 94.5 132.123 78.45C132.123 71.1 129.723 65.55 126.573 61.5ZM236.324 9.09257V27.2202L234.829 26.369C224.139 20.2814 212.158 16.3 199.924 16.3C175.741 16.3 160.424 34.1373 160.424 54.15C160.424 63.4461 163.719 72.8326 170.299 79.8866C176.865 86.9255 186.755 91.7 200.074 91.7C212.75 91.7 225.163 87.4242 235.827 80.4626L237.374 79.453V97.9442L236.852 98.2283C224.832 104.771 212.362 107.35 199.174 107.35C179.925 107.35 165.887 100.112 156.671 89.7846C147.475 79.4796 143.124 66.1491 143.124 54C143.124 25.2332 166.536 0.350006 199.474 0.350006C215.441 0.350006 229.1 5.97325 235.72 8.83194L236.324 9.09257ZM350.475 1.70001V106H333.775V28.2135L303.757 65.95H300.096L269.775 28.1924V106H253.075V1.70001H268.352L301.923 43.11L335.347 1.70001H350.475ZM301.925 44.7L267.875 2.70001H254.075V105H268.775V25.35L300.575 64.95H303.275L334.775 25.35V105H349.475V2.70001H335.825L301.925 44.7ZM388.15 107.658L377.863 95.313L378.829 94.7041C382.235 92.5572 388.652 88.0686 394.861 81.619C400.589 75.6689 406.096 68.0937 408.933 59.1901C404.372 61.4676 399.394 62.5 394.212 62.5C376.616 62.5 364.712 47.2528 364.712 31.8C364.712 16.1661 377.094 0.350006 396.312 0.350006C406.804 0.350006 415.37 4.60265 421.299 11.5576C427.214 18.4978 430.462 28.0769 430.462 38.7C430.462 64.4617 412.373 92.6552 388.889 107.2L388.15 107.658ZM409.335 57.8536C409.748 57.63 410.157 57.3955 410.562 57.15C410.442 57.6133 410.315 58.0731 410.181 58.5296C404.673 77.259 387.529 90.2449 380.211 95.0063C379.911 95.2014 379.628 95.3827 379.362 95.55L388.362 106.35C411.612 91.95 429.462 64.05 429.462 38.7C429.462 17.85 416.712 1.35001 396.312 1.35001C377.712 1.35001 365.712 16.65 365.712 31.8C365.712 46.8 377.262 61.5 394.212 61.5C399.584 61.5 404.702 60.3619 409.335 57.8536ZM495.562 0.350006V57.8H506.962V72.4H495.562V106H479.312V72.4H435.962V64.5954L488.086 0.350006H495.562ZM488.562 1.35001H494.562V58.8H505.962V71.4H494.562V105H480.312V71.4H436.962V64.95L488.562 1.35001ZM236.374 97.35C224.524 103.8 212.224 106.35 199.174 106.35C161.224 106.35 144.124 77.85 144.124 54C144.124 25.8 167.074 1.35001 199.474 1.35001C215.224 1.35001 228.724 6.90001 235.324 9.75001V25.5C234.992 25.3109 234.658 25.1238 234.324 24.9387C223.776 19.1048 211.991 15.3 199.924 15.3C175.174 15.3 159.424 33.6 159.424 54.15C159.424 73.2 172.924 92.7 200.074 92.7C212.578 92.7 224.8 88.6131 235.374 81.9418C235.709 81.7304 236.042 81.5165 236.374 81.3V97.35ZM413.413 42.6C413.469 42.1477 413.531 41.6846 413.594 41.212L413.595 41.2041C413.867 39.1712 414.163 36.9599 414.163 34.65C414.163 26.7 409.812 15 396.612 15C384.162 15 380.263 25.65 380.263 31.8C380.263 42.45 390.162 48.15 397.362 48.15C398.862 48.15 405.312 48 413.413 42.6ZM397.362 47.15C398.712 47.15 404.772 47.0297 412.479 42.0176C412.52 41.6965 412.564 41.3727 412.607 41.0463C412.878 39.0174 413.163 36.8869 413.163 34.65C413.163 30.8291 412.112 26.13 409.518 22.4164C406.955 18.7479 402.865 16 396.612 16C390.719 16 386.925 18.4999 384.573 21.6874C382.19 24.9188 381.263 28.9011 381.263 31.8C381.263 36.7815 383.567 40.5987 386.745 43.1942C389.946 45.8084 393.999 47.15 397.362 47.15ZM458.69 57.8H479.312V31.9564L458.69 57.8ZM456.612 58.8L480.312 29.1V58.8H456.612Z" fill="#FFD646"/>
+                    </g>
+                    <defs>
+                    <filter id="filter0_i_2_3" x="0" y="0" width="507" height="112" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dy="4"/>
+                    <feGaussianBlur stdDeviation="2"/>
+                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                    <feBlend mode="normal" in2="shape" result="effect1_innerShadow_2_3"/>
+                    </filter>
+                    </defs>
+                    </svg>  
+            </section>
+            
+            <ul class="toolbar">
+                <li id="introduction" class="">Introduction</li>
+                <li id="education" class="">Education</li>
+                <li id="expriences" class="">Expriences</li>
+                <li id="skills" class="">Skills</li>
+                <li id="contact" class="">Contact</li>
+            </ul>
+        </nav>
+        <div id="welcome" class="">
+            <h1 class="fancy">WELCOME</h1>
+        </div>
+    </header>
+
+    <div class="contents">
+<!-- _________________________________________________________ -->
+<!-- _________________________________________________________ -->
+        <section id="introduction" class="hide">
+            <article>
+                <h3>Hello, it's me</h3>
+                <h1>Sina.</h1>
+                <p>
+                    I studied mechanical engineering but it did not seem quite right for me, so after graduation, I decided to change my path. I did not want to spend any more time in universities so I started self-learning. Now, in less than a year of self-learning, I can introduce myself as a Front-end Developer who works as a Freelancer.
+                </p>
+            </article>
+            <div>
+                <img src="ProfileImage.jpg" alt="">
+            </div>
+        </section>
+
+<!-- _________________________________________________________ -->
+<!-- _________________________________________________________ -->
+        <section id="education" class="hide">
+            <ul class="education">
+                <li class="university">
+                    <div class="logo">
+                        <img src="Shiraz_University.png" alt="">
+                    </div>
+                    <div class="article">
+                        <h3>Shiraz University</h3>
+                        <p class="degree">Bachelor's Degree, Mechanical Engineering</p>
+                        <p class="years">2013 - 2018</p>
+                    </div>
+                </li>
+                <li class="school">
+                    <div class="logo">
+                        <img src="sampad-logo-edited.svg" alt="">                            
+                    </div>
+                    <div class="article">
+                        <h3>National Organization for Development of Exceptional Talents (Sampad)</h3>
+                        <p class="degree">High School Diploma</p>
+                        <p class="years">2006 - 2013</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+<!-- _________________________________________________________ -->
+<!-- _________________________________________________________ -->
+        <section id="expriences" class="hide">
+            <!-- in this section I want to show titles & years of activity by defualt and details of each experience be shown by hovering on each title -->
+            <aside id="titles">
+                <div id="dorsanNgo" class="activity">
+                    <div class="title">
+                        <p class="years">
+                            2017-2019
+                        </p>
+                        <h2 class="head">
+                            Tabesh_Tafakor_Novin NGO <br>
+                            (Dorsan Group Psychology)
+                        </h2>
+                    </div>
+                </div>
+
+                <div id="uniAssociation" class="activity">
+                    <div class="title">
+                        <p class="years">
+                            2015-2016
+                        </p>
+                        <h2 class="head">
+                            Shiraz University School of Mechanical Engineering Association
+                        </h2>
+                    </div>
+                </div>
+
+                <div id="uniEntrance" class="activity">
+                    <div class="title">
+                        <p class="years">
+                            2014-2017
+                        </p>
+                        <h2 class="head">
+                            High School Educatinal Advisor
+                        </h2>
+                    </div>
+                </div>
+
+                <div id="realEstate" class="activity">
+                    <div class="title">
+                        <p class="years">
+                            Apr_July 2018<br>
+                            Oct_Dec 2020
+                        </p>
+                        <h2 class="head">
+                            Real State
+                        </h2>
+                    </div>
+                </div>
+
+                <div id="militaryServices" class="activity">
+                    <div class="title">
+                        <p class="years">
+                            2019-2020
+                        </p>
+                        <h2 class="head">
+                            Compulsory Military Services
+                        </h2>
+                    </div>
+                </div>
+
+            </aside>
+
+            <aside id="details">
+                <div id="dorsanNgo" class="detail hide">
+                    <article class="intro">
+                        The main goal of the NGO was increasing the level of public awareness and promoting mental health with the help of modern approaches including Gestalt, Existential therapy, and Schema therapy. As co-founders, we have been responsible for holding psychology workshops and other events. Unfortunately, the NGO could not last during the Coronavirus pandemic and after three magnificent years of activity, we had no choice but to close it. <br>Briefly, I can list my duties as:
+                        <ul>                        
+                        <li>Co-Founder of the NGO</li> 
+                        <li>Central Council of the NGO</li> 
+                        <li>Financial Manager and Executive Affairs</li> 
+                        <li>Workshops Educational Director</li> 
+                        </ul>
+                    </article>
+                </div>
+
+                <div id="uniAssociation" class="detail hide">
+                    <article class="intro">
+                        I was a member of Shiraz University School of Mechanical Engineering Association as a volunteer for a year. That was a magnificent experience since we learned a lot about teamwork and planning. In general, I can define my duties as follow:
+                        <ul>
+                            <li>Organizing and managing various classes</li> 
+                            <li>Holding seminars about engineering issues</li>
+                            <li>Holding student competition</li>
+                            <li>Holding scientific visits</li>
+                        </ul>
+                    </article>
+                </div>
+
+                <div id="uniEntrance" class="detail hide">
+                    <article class="intro">
+                        University Entrance Exam is the most important exam that happens annually for high school students. I was working as a counselor during my bachelor’s degree. This was my first job experience ever!
+                    </article>
+                </div>
+                    
+                <div id="realEstate" class="detail hide">
+                    <article class="intro">
+                        I was in charge of marketing for real estate but that was only a few months. I like to learn from opportunities and this job taught me communications and persistence.
+                    </article>
+                </div>
+                
+                <div id="militaryServices" class="detail hide">
+                    <article class="intro">
+                        Every qualified boy older than 18 is supposed to spend 21 months in Military Services as National Duty Obligation. A very hard period of time that can not be explained and it is not even necessary to be mentioned in a resume webpage but almost 2 years of absents after graduation can not be explained either. Although, this time seems useless to everyone, I had my own achievements that I myself am proud of.
+                    </article>
+                </div>
+            </aside>
+        </section>
+<!-- _________________________________________________________ -->
+<!-- _________________________________________________________ -->
+        <section id="skills" class="hide">
+            <aside id="frontend" class="closed">
+                <h1 class="title">Front_end Development</h1>
+                <h2>HTML</h2>
+                <h2>CSS</h2>
+                <h2>JavaScript</h2>
+                <div class="cover"></div>
+            </aside>
+            <aside id="engSoftware" class="closed">
+                <h1 class="title">Mechanical Engineering Software</h1>
+                <h2>MATLAB</h2>
+                <h2>SolidWorks</h2>
+                <h2>Catia</h2>
+                <h2>AutoCad</h2>
+                <h2>Ansys Fluent</h2>
+                <h2>Gambit</h2>
+                <div class="cover"></div>
+            </aside>
+            <aside id="general" class="closed">
+                <h1 class="title">General</h1>
+                <h2>Microsoft Word Document</h2>
+                <h2>Microdoft Office Presentation</h2>
+                <h2>Microsoft Excel Worksheet</h2>
+                <div class="cover"></div>
+            </aside>
+        
+        </section>
+<!-- _________________________________________________________ -->
+<!-- _________________________________________________________ -->
+        <section id="contact" class="hide">
+            <aside class="card">
+                <div class="icons">
+                    <a id="linkedin" class="contact" href="https://linkedin.com/in/sinasaadatescm94" target="_blank">
+                        <img src="linkedin.svg" alt="photo">
+                    </a>
+                    <a id="github" class="contact" href="https://github.com/SinaSaadatESCM94" target="_blank">
+                        <img src="github.svg" alt="photo">
+                    </a>
+                    <p id="gmail" class="contact" href="escm94.sinasaadat@gmail.com">
+                        <img src="gmail.svg" alt="photo">
+                    </p>
+                </div>
+                <p class="link"></p>
+            </aside>
+        </section>
+<!-- _________________________________________________________ -->
+<!-- _________________________________________________________ -->
+
+    </div>
+</body>
+</html>

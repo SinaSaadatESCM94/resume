@@ -1,0 +1,682 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #0a0a0c;
+  overflow: hidden;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-color: #0a0a0c;
+  color: #ffd646;
+  -webkit-animation: resizing 3s ease 6.0s forwards;
+          animation: resizing 3s ease 6.0s forwards;
+}
+
+header nav {
+  width: 100%;
+  height: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header nav #opening #logo {
+  width: 12vw;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 88vw;
+  text-decoration: none;
+  list-style: none;
+  font-size: 2rem;
+}
+
+header nav ul li {
+  color: #fff6f1;
+  cursor: pointer;
+}
+
+header nav ul li.show {
+  font-size: 2.5rem;
+  color: #ffd646;
+  cursor: default;
+}
+
+@-webkit-keyframes resizing {
+  from {
+    height: auto;
+  }
+  to {
+    height: 15vh;
+  }
+}
+
+@keyframes resizing {
+  from {
+    height: auto;
+  }
+  to {
+    height: 15vh;
+  }
+}
+
+header #welcome.hide {
+  display: none;
+}
+
+header #opening.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #0a0a0c;
+  color: #fff6f1;
+  -webkit-animation: resizing 3s ease 6.0s forwards;
+          animation: resizing 3s ease 6.0s forwards;
+}
+
+header #opening.show #logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* to show it in center we gonna translate it 50% in x & y direction */
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 50vw;
+  -webkit-animation: logoMovement 3s ease 6.0s forwards;
+          animation: logoMovement 3s ease 6.0s forwards;
+}
+
+header #opening.show #logo path {
+  -webkit-animation: fill-logo 0.5s ease forwards 3.5s;
+          animation: fill-logo 0.5s ease forwards 3.5s;
+}
+
+header #opening.show #logo path:nth-child(1) {
+  opacity: 0;
+  stroke-dasharray: 613.4562377929688px;
+  stroke-dashoffset: 613.4562377929688px;
+  -webkit-animation: line-animation 3.5s ease forwards;
+          animation: line-animation 3.5s ease forwards;
+}
+
+header #opening.show #logo path:nth-child(2) {
+  opacity: 0;
+  stroke-dasharray: 515.8348388671875px;
+  stroke-dashoffset: 515.8348388671875px;
+  -webkit-animation: line-animation 3.5s ease forwards 0.2s;
+          animation: line-animation 3.5s ease forwards 0.2s;
+}
+
+header #opening.show #logo path:nth-child(3) {
+  opacity: 0;
+  stroke-dasharray: 466.6161804199219px;
+  stroke-dashoffset: 466.6161804199219px;
+  -webkit-animation: line-animation 3.5s ease forwards 0.8s;
+          animation: line-animation 3.5s ease forwards 0.8s;
+}
+
+header #opening.show #logo path:nth-child(4) {
+  opacity: 0;
+  stroke-dasharray: 920.3187255859375px;
+  stroke-dashoffset: 920.3187255859375px;
+  -webkit-animation: line-animation 3.5s ease forwards 1.2s;
+          animation: line-animation 3.5s ease forwards 1.2s;
+}
+
+header #opening.show #logo path:nth-child(5) {
+  opacity: 0;
+  stroke-dasharray: 451.2801513671875px;
+  stroke-dashoffset: 451.2801513671875px;
+  -webkit-animation: line-animation 3.5s ease forwards 1.6s;
+          animation: line-animation 3.5s ease forwards 1.6s;
+}
+
+header #opening.show #logo path:nth-child(6) {
+  opacity: 0;
+  stroke-dasharray: 518.6900024414062px;
+  stroke-dashoffset: 518.6900024414062px;
+  -webkit-animation: line-animation 3.5s ease forwards 2s;
+          animation: line-animation 3.5s ease forwards 2s;
+}
+
+@-webkit-keyframes line-animation {
+  from {
+    opacity: 0;
+    fill: transparent;
+  }
+  to {
+    opacity: 1;
+    stroke-dashoffset: 0px;
+    fill: #ffd646;
+  }
+}
+
+@keyframes line-animation {
+  from {
+    opacity: 0;
+    fill: transparent;
+  }
+  to {
+    opacity: 1;
+    stroke-dashoffset: 0px;
+    fill: #ffd646;
+  }
+}
+
+@-webkit-keyframes logoMovement {
+  from {
+    top: 50%;
+    left: 50%;
+    width: 50vw;
+  }
+  to {
+    top: 7.5%;
+    left: 7.5%;
+    width: 12vw;
+  }
+}
+
+@keyframes logoMovement {
+  from {
+    top: 50%;
+    left: 50%;
+    width: 50vw;
+  }
+  to {
+    top: 7.5%;
+    left: 7.5%;
+    width: 12vw;
+  }
+}
+
+header #welcome {
+  width: 100%;
+  height: 85%;
+}
+
+header #welcome h1 {
+  font-size: 10rem;
+  text-align: center;
+  line-height: 70vh;
+}
+
+header #welcome span {
+  opacity: 0;
+  -webkit-transition: all 2s ease 6.5s;
+  transition: all 2s ease 6.5s;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  display: inline-block;
+  color: #fff6f1;
+}
+
+header #welcome span.fade {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff6f1), to(#085bb9));
+  background: linear-gradient(#fff6f1, #085bb9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contents #introduction.hide {
+  display: none;
+}
+
+.contents #introduction.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 1;
+  width: 100%;
+  height: 85vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #0a0a0c;
+  color: #fff6f1;
+  padding-top: 5%;
+}
+
+.contents #introduction.show article {
+  width: 30%;
+  height: 60%;
+  padding-left: 5%;
+}
+
+.contents #introduction.show article h3 {
+  font-size: 2rem;
+  text-align: justify;
+}
+
+.contents #introduction.show article h1 {
+  font-size: 5.4rem;
+  text-align: justify;
+}
+
+.contents #introduction.show article p {
+  font-size: 1.8rem;
+  line-height: 2rem;
+  text-align: justify;
+}
+
+.contents #introduction.show div {
+  width: 50vh;
+  height: 60vh;
+  margin-left: 5%;
+}
+
+.contents #introduction.show div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 100%;
+}
+
+.contents #education.hide {
+  display: none;
+}
+
+.contents #education.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 85vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-color: #0a0a0c;
+  color: #085bb9;
+}
+
+.contents #education.show ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  list-style: none;
+}
+
+.contents #education.show ul li {
+  margin-top: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contents #education.show ul li .logo {
+  position: relative;
+  height: 10vh;
+  width: 10vh;
+}
+
+.contents #education.show ul li .logo img {
+  position: absolute;
+  height: 10vh;
+  width: 10vh;
+  top: 0%;
+  left: 0%;
+}
+
+.contents #education.show ul li .article {
+  padding-left: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+}
+
+.contents #education.show ul li .article h3 {
+  font-size: 2rem;
+}
+
+.contents #education.show ul li .article .degree {
+  font-size: 1.6rem;
+}
+
+.contents #education.show ul li .article .years {
+  font-size: 1.2rem;
+}
+
+.contents #education.show ul .school {
+  padding-left: 10%;
+}
+
+.contents #expriences.hide {
+  display: none;
+}
+
+.contents #expriences.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 1;
+  width: 100%;
+  height: 85vh;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: #0a0a0c;
+  color: #fff6f1;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  overflow: hidden;
+}
+
+.contents #expriences.show #titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contents #expriences.show #titles .activity {
+  position: relative;
+  width: 95%;
+  margin-left: 5%;
+}
+
+.contents #expriences.show #titles .activity .title {
+  position: absolute;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  cursor: pointer;
+}
+
+.contents #expriences.show #titles .activity .title p {
+  width: 40%;
+  font-size: 1.2rem;
+}
+
+.contents #expriences.show #titles .activity .title h2 {
+  width: 60%;
+  font-size: 1.6rem;
+}
+
+.contents #expriences.show #titles .activity .title:hover {
+  top: -5px;
+  left: -5px;
+  color: #ffd646;
+  text-shadow: 10px 10px 10px #081856;
+}
+
+.contents #expriences.show #titles .activity .title:hover p {
+  font-size: 1.4rem;
+}
+
+.contents #expriences.show #titles .activity .title:hover h2 {
+  font-size: 1.8rem;
+}
+
+.contents #expriences.show #details {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contents #expriences.show #details .detail.hide {
+  display: none;
+}
+
+.contents #expriences.show #details .detail.show {
+  position: absolute;
+  padding: 5%;
+  width: 80%;
+  background-color: #fff6f1;
+  color: #0a0a0c;
+  -webkit-box-shadow: 10px 10px 10px #081856;
+          box-shadow: 10px 10px 10px #081856;
+  border-radius: 5px;
+}
+
+.contents #expriences.show #details .detail.show article {
+  font-size: 1.8rem;
+  line-height: 2rem;
+}
+
+.contents #expriences.show #details .detail.show article ul {
+  padding-left: 3.6rem;
+  padding-top: 1.8rem;
+}
+
+.contents #skills.hide {
+  display: none;
+}
+
+.contents #skills.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 85vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #0a0a0c;
+  color: #fff6f1;
+}
+
+.contents #skills.show aside {
+  position: relative;
+  width: 33%;
+  height: 100%;
+  padding-top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  opacity: 0.6;
+  overflow: hidden;
+}
+
+.contents #skills.show aside:hover {
+  opacity: 1;
+}
+
+.contents #skills.show aside h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding-bottom: 3.6rem;
+  cursor: pointer;
+}
+
+.contents #skills.show aside h1:hover {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.contents #skills.show aside h2 {
+  cursor: context-menu;
+  font-size: 1.8rem;
+  padding-bottom: 1.8rem;
+  color: #085bb9;
+}
+
+.contents #skills.show aside .cover {
+  position: absolute;
+  background-color: #0a0a0c;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  top: 10rem;
+}
+
+.contents #skills.show aside.opened {
+  opacity: 1;
+}
+
+.contents #skills.show aside.opened h1 {
+  color: #085bb9;
+  font-size: 2rem;
+  padding-bottom: 3.6rem;
+  font-weight: bolder;
+  cursor: context-menu;
+}
+
+.contents #contact.hide {
+  display: none;
+}
+
+.contents #contact.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 70vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #0a0a0c;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contents #contact.show .card {
+  position: relative;
+  width: 60%;
+  height: 40%;
+  background-color: #081856;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contents #contact.show .card .icons {
+  height: 75%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contents #contact.show .card .icons .contact {
+  height: 60%;
+  border-radius: 20px;
+}
+
+.contents #contact.show .card .icons .contact img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.contents #contact.show .card .icons .contact:hover {
+  -webkit-box-shadow: 1px 1px 10px #ffd646;
+          box-shadow: 1px 1px 10px #ffd646;
+}
+
+.contents #contact.show .card .link {
+  height: 25%;
+  width: 100%;
+  font-size: 2rem;
+  color: #ffd646;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
